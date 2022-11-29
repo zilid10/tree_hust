@@ -19,7 +19,7 @@ from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('',include('Post.urls')),
-    path('',include('User.urls')),
+    path('api/',include('Post.urls')),
+    path('api/',include('User.urls')),
     path('docs/', include_docs_urls(title='说明文档')),
 ]
