@@ -36,7 +36,7 @@ export default function LoginModal(props) {
 
   function handleSubmit() {
     if (!isLogin) {
-      fetch("/register/", {
+      fetch("/api/register/", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -66,7 +66,7 @@ export default function LoginModal(props) {
           }
         });
     } else {
-      fetch("/login/", {
+      fetch("/api/login/", {
         method: "POST",
         mode: "cors",
         cache: "no-cache",

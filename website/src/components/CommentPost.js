@@ -4,7 +4,7 @@ export default function CommentPost(props) {
   const [likes, setLikes] = useState(props.likes);
 
   function handleLike(id) {
-    fetch("/post/" + id + "/upvote/", {
+    fetch("/api/post/" + id + "/upvote/", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export default function CommentPost(props) {
   }
 
   // function handleHate(id) {
-  //   fetch('/post/'+id+'/downvote/',{
+  //   fetch('/api/post/'+id+'/downvote/',{
   //     method:'PUT',
   //     headers: {
   //       "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export default function CommentPost(props) {
   // }
 
   function handleComment(p) {
-    fetch("/post/comment/"+p.id+'/', {
+    fetch("/api/post/comment/"+p.id+'/', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

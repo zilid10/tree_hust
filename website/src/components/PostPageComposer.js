@@ -27,7 +27,7 @@ export default function PostPageComposer(props) {
   }
 
   function handleSubmit() {
-    fetch("/post/create/", {
+    fetch("/api/post/create/", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",
@@ -58,7 +58,7 @@ export default function PostPageComposer(props) {
   }
 
   function saveAsDraft() {
-    fetch("/draft/create/", {
+    fetch("/api/draft/create/", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",

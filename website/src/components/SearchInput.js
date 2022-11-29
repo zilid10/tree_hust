@@ -16,7 +16,7 @@ export default function SearchInput(props) {
   }
 
   function handleSubmit(e) {
-    fetch("/post/?search="+searchKey, {
+    fetch("/api/post/?search="+searchKey, {
       method: "GET",
       mode: "cors",
       headers: {

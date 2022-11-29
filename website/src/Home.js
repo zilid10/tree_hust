@@ -23,7 +23,7 @@ export default function Home(props) {
   
 
   function fetchPosts() {
-    fetch("/post/", {
+    fetch("/api/post/", {
       method: "GET",
       mode: "cors",
       headers: {

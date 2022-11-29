@@ -35,7 +35,7 @@ export default function HomePageComposer(props) {
   }
 
   function handleSubmit() {
-    fetch("/post/create/", {
+    fetch("/api/post/create/", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",
@@ -65,7 +65,7 @@ export default function HomePageComposer(props) {
   }
 
   function saveAsDraft() {
-    fetch("/draft/create/", {
+    fetch("/api/draft/create/", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",

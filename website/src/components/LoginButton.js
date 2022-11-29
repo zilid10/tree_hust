@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function LoginButton(props) {
   function logout() {
-    fetch("/logout/", {
+    fetch("/api/logout/", {
       method: "GET",
       mode: "cors",
       cache: "no-cache",

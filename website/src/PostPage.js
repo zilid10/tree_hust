@@ -37,7 +37,7 @@ export default function PostPage(props) {
   }, []);
 
   function fetchComments() {
-    fetch("/post/" + props.post_id + "/", {
+    fetch("/api/post/" + props.post_id + "/", {
       method: "GET",
     })
       .then((response) => {
@@ -56,7 +56,7 @@ export default function PostPage(props) {
   }
 
   function handleReply(pk) {
-    fetch("/post/comment/" + pk + "/", {
+    fetch("/api/post/comment/" + pk + "/", {
       method: "POST",
       mode: "cors",
       cache: "no-cache",
@@ -82,7 +82,7 @@ export default function PostPage(props) {
   }
 
   function handleCollect(pk) {
-    fetch('/post/'+pk+'/collect/', {
+    fetch('/api/post/'+pk+'/collect/', {
       method: "PUT",
       mode: "cors",
       cache: "no-cache",

@@ -1,7 +1,7 @@
 export default function DraftPost(props) {
   
   function deleteDraft(){
-    fetch("/draft/"+props.id+"/delete/", {
+    fetch("/api/draft/"+props.id+"/delete/", {
       method: "DELETE",
       mode: "cors",
       cache: "no-cache",

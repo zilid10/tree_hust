@@ -14,7 +14,7 @@ export default function Header(props) {
   })
 
   function fetchDrafts() {
-    fetch("/draft/", {
+    fetch("/api/draft/", {
       method: "GET",
       mode: "cors",
       cache: "no-cache",
